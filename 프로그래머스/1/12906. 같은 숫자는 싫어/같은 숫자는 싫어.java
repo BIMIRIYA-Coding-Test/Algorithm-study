@@ -16,6 +16,6 @@ public class Solution {
         }
         
         // List를 int 배열로 변환하여 반환
-        return answer.stream().mapToInt(Integer::intValue).toArray();
+        return answer.stream().mapToInt(i->i).toArray();
     }
 }
