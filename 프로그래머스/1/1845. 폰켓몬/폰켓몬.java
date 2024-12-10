@@ -11,9 +11,6 @@ class Solution {
         }
         System.out.println(setNums.size());
         
-        if(nums.length/2>setNums.size()){
-            return setNums.size();
-        }
-        return nums.length/2;
+        return Integer.min(nums.length/2, setNums.size());
     }
 }
